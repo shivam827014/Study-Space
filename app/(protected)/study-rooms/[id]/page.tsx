@@ -93,7 +93,10 @@ export default function Page({ params: { id: studyRoomId } }: StudyRoomPageProps
         <button className="btn max-w-sm" onClick={handleLeaveClick}>
           Leave Room
         </button>
+        <div className="bg-gray-500 p-3 rounded-md">
         <CopyToClipboardButton text = {`https://study-space/join-study-room?studyRoomId=${studyRoomId}&userId=${currentUser?.$id}&role=user`} />
+
+        </div>
         <button className="btn max-w-sm" onClick={() => setOpen(true)}>
           Create a new channel
         </button>

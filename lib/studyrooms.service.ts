@@ -97,13 +97,13 @@ export async function joinStudyRoom(
     ID.unique(),
     {
       study_room_id: studyRoomId,
-      user_id: currentUserId, // Pass `currentUserId` instead of calling `useAuth`
+      user_id: currentUserId, // This should be the ID of the user creating the document
       role,
     },
     [
-      Permission.read(Role.any()),
-      Permission.delete(Role.user(userId)),
-      Permission.update(Role.user(userId)),
+      Permission.read(Role.any()), // Allows anyone to read
+      Permission.delete(Role.user(currentUserId)), // Only the current user can delete
+      Permission.update(Role.user(currentUserId)), // Only the current user can update
     ]
   );
 }

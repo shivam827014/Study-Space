@@ -123,7 +123,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="https://github.com/shivam827014"
+                  href="https://github.com/a4aditya7/study-space"
                   className="block px-4 py-2 text-white hover:bg-gray-800"
                   target="_blank"
                 >
