@@ -8,13 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "StudySpace - Collaborative Online Learning Platform",
   description: "StudySpace - Collaborative online learning platform for virtual study groups",
-  authors: [{ name: "Jeevan Kumar", url: "https://g1mishra.dev" }],
+  authors: [{ name: "Aditya Marandi", url: "https://github.com/a4aditya7/study-space" }],
   openGraph: {
     type: "website",
     title: "StudySpace - Collaborative Online Learning Platform",
     description: "StudySpace - Collaborative online learning platform for virtual study groups",
     images: [
-      "https://cloud.appwrite.io/v1/storage/buckets/assets/files/648aa9eb048925bfad0e/view?project=6487ff1a54c5fa1557a7",
+      "https://cloud.appwrite.io/v1/storage/buckets/6636a694000915b83b44/files/663827ff0008d5e7f0b1/view?project=66369eda001884780e9e&mode=admin",
     ],
   },
 };
