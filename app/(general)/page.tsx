@@ -38,13 +38,13 @@ export default async function Page() {
             WE BELIEVE IN WHAT WE BUILD.
           </h1>
           <div className="bg-[#343446] p-4 rounded-15 max-w-max">
-            <Image
-              src={bucketFilePath("assets", "648a25c21711822db4eb")}
+            {/* <Image
+              src={bucketFilePath("assets", "6636a694000915b83b44")}
               alt="fancy-banner-03"
               width={"400"}
               height={"400"}
               className="object-contain object-center"
-            />
+            /> */}
           </div>
         </div>
         <div className="flex flex-col items-center justify-center text-center md:text-left mt-8 sm:mt-0">
