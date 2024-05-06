@@ -1,5 +1,6 @@
 "use client";
 
+import CopyToClipboardButton from "@/components/Group/CopyToClipbordButton";
 import Loading from "@/components/Loading";
 import CreateChannelModal from "@/components/Modal/CreateChannelModal";
 import SquareCard from "@/components/SquareCard";
@@ -92,6 +93,7 @@ export default function Page({ params: { id: studyRoomId } }: StudyRoomPageProps
         <button className="btn max-w-sm" onClick={handleLeaveClick}>
           Leave Room
         </button>
+        <CopyToClipboardButton text = {`https://study-space/join-study-room?studyRoomId=${studyRoomId}&userId=${currentUser?.$id}&role=user`} />
         <button className="btn max-w-sm" onClick={() => setOpen(true)}>
           Create a new channel
         </button>
